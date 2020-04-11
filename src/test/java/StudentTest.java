@@ -2,7 +2,6 @@
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.ArrayList;
 
 import static org.junit.Assert.*;
 
@@ -40,9 +39,11 @@ public class StudentTest {
         assertEquals("[100]",georgie.getGrades().toString());
     }
 
+    @Test
     public void TestIfGradesAreAveraged(){
         georgie.addGrade(96);
         georgie.addGrade(75);
-        assertEquals("90.33",Double.toString(georgie.getAverage()));
+//        assertEquals("90.33",Double.toString(georgie.getAverage()));
+        assertEquals("85.5",Double.toString(georgie.getAverage()));
     }
 }
